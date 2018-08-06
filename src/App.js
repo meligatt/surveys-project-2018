@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import './App.css';
 import SurveyList from './components/survey-list';
+import SurveyResults from './components/survey-results';
 
 class App extends Component {
   constructor(){
@@ -13,7 +14,6 @@ class App extends Component {
   componentDidMount(){
     axios.get("http://localhost:3000/api/surveys")
     .then((response) => {
-      console.log('response',response);
       this.setState({surveys: response.data.survey_results})
     })
     .catch((error) => {
@@ -24,9 +24,9 @@ class App extends Component {
     const { surveys } = this.state;
     return (
       <Router>
-        <div className="App" style={{border:'1px solid gray', padding: '1rem'}}>
+        <div className="App">
         <Route exact={true} path="/" render = {()=> <SurveyList surveys = { surveys } /> } />
-        <Route path="/survey_results/:id" render ={({ match }) => <div><h1>Survey Results</h1> <p>survey:{ match.params.id}</p></div>}/>
+        <Route path="/survey_results/:id" component = { SurveyResults }/>
         </div>
       </Router>
     );
