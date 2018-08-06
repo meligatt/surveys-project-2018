@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import IndividualSurveyResults from '../individual-survey-results';
 
 class SurveyResults extends Component{
   constructor(){
@@ -23,7 +24,6 @@ class SurveyResults extends Component{
   render(){
     const { id } = this.props.match.params;
     const { name, participant_count, response_rate, submitted_response_count, themes, url } = this.state.results;
-
     return(
       <div>
         <h1>{ name } (id: {id})</h1>
@@ -34,6 +34,14 @@ class SurveyResults extends Component{
           <li>submitted response_count { submitted_response_count }</li>
           <li>url { url }</li>
         </ul>
+
+       { themes &&
+         <div style={{outline: '1px solid red'}}>
+           <h3>Stats:</h3>
+           <IndividualSurveyResults response_rate = { response_rate } themes = { themes }/>
+         </div>
+        }
+
         <h3>Themes:</h3>
         <ul>
           { themes && themes.map((result, i) =>

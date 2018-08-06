@@ -17,7 +17,7 @@ const SurveyList = ({surveys}) => {
                 <li>response_rate: {item.response_rate}</li>
                 <li>submitted_response_count: {item.submitted_response_count}</li>
               </ul>
-              <Link to={url}>View Results</Link>
+              <Link to={url}>View survey details</Link>
             </div>
           )}
         )
