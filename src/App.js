@@ -1,19 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from 'axios';
+
 import './App.css';
+import SurveyList from './components/survey-list';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {surveys:[]};
+  }
+  componentDidMount(){
+    axios.get("http://localhost:3000/api/surveys")
+    .then((response) => {
+      console.log('response',response);
+      this.setState({surveys: response.data.survey_results})
+    })
+    .catch((error) => {
+      console.log(error.message);
+    })
+  }
   render() {
+    const { surveys } = this.state;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div className="App" style={{border:'1px solid gray', padding: '1rem'}}>
+        <Route exact={true} path="/" render = {()=> <SurveyList surveys = { surveys } /> } />
+        <Route path="/survey_results/:id" render ={({ match }) => <div><h1>Survey Results</h1> <p>survey:{ match.params.id}</p></div>}/>
+        </div>
+      </Router>
     );
   }
 }
