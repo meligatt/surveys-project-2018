@@ -17,10 +17,12 @@ const getAverageRatingPerQuestion = (question) => {
      };
  }
 
-const IndividualSurveyResults = ({
-  response_rate,
+const AverageRatingPerQuestion = ({
   themes
 }) => {
+  if (typeof themes === 'undefined' || themes.length === 0){
+    return null;
+  }
 
   const result = themes.map((theme) => {
     const questionsArray = theme.questions;
@@ -33,10 +35,6 @@ const IndividualSurveyResults = ({
      return(
        <div>
          <div>
-           {/* participation rate */}
-           <p>participation rate as a percentage: { (response_rate * 100).toFixed(0) }%</p>
-         </div>
-         <div>
            <p>the average rating (from 1 to 5) for each question</p>
            {
              result.map((item) => {
@@ -48,4 +46,4 @@ const IndividualSurveyResults = ({
     )
   }
 
-export default IndividualSurveyResults;
+export default AverageRatingPerQuestion;

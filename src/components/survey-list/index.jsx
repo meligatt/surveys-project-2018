@@ -1,28 +1,53 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { makeRequest } from '../../lib/make-request';
+import SurveyDetails from '../survey-details';
 
-const SurveyList = ({surveys}) => {
-  return(
-    <div>
-      <h1>Survey List</h1>
+class SurveyList extends Component {
+  constructor(){
+    super();
+    this.state = {surveys: null};
+  }
+
+  componentDidMount(){
+    makeRequest({endpoint:"http://localhost:3000/api/surveys", method: "GET"})
+    .then((data) => {
+      this.setState({surveys: data.survey_results});
+    })
+  }
+
+  renderSurveys(surveys){
+    if(surveys === null || surveys.length === 0){
+      return "No list available";
+    }
+    return surveys.map((item, i) => {
+      const url = item.url.split(".json")[0]; //url:  `/survey_results/1`
+      return (
+        <div key = {i}>
+          <SurveyDetails
+            name = {item.name}
+            participantCount = { item.participant_count }
+            responseRate = { item.response_rate }
+            submittedResponseCount = {item.submitted_response_count}
+          />
+          <Link to = { url }>
+            View survey details
+          </Link>
+          <hr/>
+        </div>
+      )}
+    )
+  }
+
+  render(){
+    const { surveys } = this.state;
+    return(
       <div>
-        { surveys.map((item, i) => {
-          const url = item.url.split(".json")[0]; //url:  `/survey_results/1`
-          return (
-            <div key = {i} style={{outline:'1px solid pink', margin:'1rem'}}>
-              <ul>
-                <li>Name: {item.name}</li>
-                <li>url: {item.url}</li>
-                <li>participant_count: {item.participant_count}</li>
-                <li>response_rate: {item.response_rate}</li>
-                <li>submitted_response_count: {item.submitted_response_count}</li>
-              </ul>
-              <Link to={url}>View survey details</Link>
-            </div>
-          )}
-        )
-      }
+        <h1>Survey List</h1>
+        <div>
+          { this.renderSurveys(surveys) }
+        </div>
       </div>
-    </div>
-  )}
-export default SurveyList;
+    )}
+  }
+  export default SurveyList;

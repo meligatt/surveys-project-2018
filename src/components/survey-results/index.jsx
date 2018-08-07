@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
-import IndividualSurveyResults from '../individual-survey-results';
+import { makeRequest } from '../../lib/make-request';
+import SurveyDetails from '../survey-details';
+import PercentagePie from '../percentage-pie';
+import AverageRatingPerQuestion from '../average-rating-per-question';
+import SurveyThemeDetails from '../survey-theme-details';
+
 
 class SurveyResults extends Component{
   constructor(){
@@ -10,57 +13,40 @@ class SurveyResults extends Component{
   }
 
   componentDidMount(){
-    // fetch for results according to survey_id requested passed via params.
+    // TODO:  get the url from this.state.results.url not params
     const { match } = this.props;
-    axios.get(`http://localhost:3000/api/survey_results/${match.params.id}`)
-    .then((response) => {
-      this.setState({results: response.data.survey_result_detail});
-    })
-    .catch((error) => {
-      console.log(error.message);
+    makeRequest({
+      endpoint: `http://localhost:3000/api/survey_results/${match.params.id}`,
+      method: "GET",
+    }).then((data) => {
+      this.setState({results: data.survey_result_detail});
     });
   }
 
+  renderSurveyThemes(themes){
+    if(typeof themes === 'undefined' ||  themes.length === 0 ){
+      return null;
+    }
+    return(
+      <ul>
+        { themes.map((theme, i) => <SurveyThemeDetails theme = { theme } key = {i} />) }
+      </ul>
+    )
+  }
+
   render(){
-    const { id } = this.props.match.params;
-    const { name, participant_count, response_rate, submitted_response_count, themes, url } = this.state.results;
+    const { name, participant_count, response_rate, submitted_response_count, themes } = this.state.results;
     return(
       <div>
-        <h1>{ name } (id: {id})</h1>
-        <h2>Results:</h2>
-        <ul>
-          <li>participant count: { participant_count }</li>
-          <li>response rate { response_rate }</li>
-          <li>submitted response_count { submitted_response_count }</li>
-          <li>url { url }</li>
-        </ul>
-
-       { themes &&
-         <div style={{outline: '1px solid red'}}>
-           <h3>Stats:</h3>
-           <IndividualSurveyResults response_rate = { response_rate } themes = { themes }/>
-         </div>
-        }
-
-        <h3>Themes:</h3>
-        <ul>
-          { themes && themes.map((result, i) =>
-            <li key = {i}>
-              <h4>Theme: { result.name }</h4>
-              <strong>Questions:</strong>
-              <ul style={{border:'1px solid lightblue'}}>
-                { result.questions.map((question, j) =>
-                  <li key = {j}>
-                    <p>question description: {question.description}</p>
-                    <p>question type: {question.question_type}</p>
-                    <p>number of responses: {question.survey_responses.length}</p>
-                  </li>
-                )}
-              </ul>
-            </li>
-          )}
-        </ul>
-        <Link to="/">Home</Link>
+        <SurveyDetails
+          name = { name }
+          participantCount = { participant_count }
+          responseRate = { response_rate }
+          submittedResponseCount = { submitted_response_count }
+        />
+        <PercentagePie value = { response_rate }/>
+        <AverageRatingPerQuestion themes = { themes }/>
+        { this.renderSurveyThemes(themes) }
       </div>
     )
   }
