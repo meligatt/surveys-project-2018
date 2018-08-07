@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { makeRequest } from '../../lib/make-request';
+import { makeRequest } from '../../lib/requests/make-request';
 import SurveyDetails from '../survey-details';
 import PercentagePie from '../percentage-pie';
 import AverageRatingPerQuestion from '../average-rating-per-question';
@@ -16,7 +16,7 @@ class SurveyResults extends Component{
     // TODO:  get the url from this.state.results.url not params
     const { match } = this.props;
     makeRequest({
-      endpoint: `http://localhost:3000/api/survey_results/${match.params.id}`,
+      endpoint: `/api/survey_results/${match.params.id}`,
       method: "GET",
     }).then((data) => {
       this.setState({results: data.survey_result_detail});

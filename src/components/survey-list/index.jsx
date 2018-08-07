@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { makeRequest } from '../../lib/make-request';
+import { makeRequest } from '../../lib/requests/make-request';
 import SurveyDetails from '../survey-details';
 
 class SurveyList extends Component {
@@ -10,7 +10,7 @@ class SurveyList extends Component {
   }
 
   componentDidMount(){
-    makeRequest({endpoint:"http://localhost:3000/api/surveys", method: "GET"})
+    makeRequest({endpoint:"/api/surveys", method: "GET"})
     .then((data) => {
       this.setState({surveys: data.survey_results});
     })
