@@ -8,8 +8,10 @@
   }
   .footer__author {
     display: flex;
+    font-size: 0.8rem;
     align-items: center;
     color: rgba(0,0,0,0.5);
+    flex: 0 1 auto;
   }
   .footer__link-list{
     margin: 0;

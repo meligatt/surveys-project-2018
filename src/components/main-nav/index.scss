@@ -1,5 +1,8 @@
 .main-nav {
   .main-nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 90px;
     background: white;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
@@ -14,11 +17,17 @@
     padding: 0.5rem;
   }
   .main-nav__menu {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 30%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   .main-nav__item {
-    display: inline-block;
-    padding: 20px 15px;
+    flex: 1 0 calc(25% - 10px);
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 1rem;
     a {
       color: #3e4543;
