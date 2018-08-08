@@ -1,3 +1,17 @@
-.app-container {
-  outline: 1px solid red;
+body {
+  font-size: 1rem;
+  background-image: linear-gradient(#fff,#e8f1f3);
+}
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  margin-top: 0px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  li {
+    margin: 1rem 0;
+  }
 }

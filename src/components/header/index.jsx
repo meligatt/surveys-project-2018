@@ -1,13 +1,18 @@
+import './index.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   return(
-    <div style = {{backgroundColor:'#EEE'}}>
-      <ul>
+    <nav className="header">
+      <a className="logo" href="/">
+        Survey system
+      </a>
+      <ul className="nav-main">
         <li><Link to="/">Home</Link></li>
       </ul>
-    </div>
+
+    </nav>
   )
 }
 export default Header;

@@ -1,3 +1,4 @@
+import './index.scss';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { makeRequest } from '../../lib/requests/make-request';
@@ -23,7 +24,7 @@ class SurveyList extends Component {
     return surveys.map((item, i) => {
       const url = item.url.split(".json")[0]; //url:  `/survey_results/1`
       return (
-        <div key = {i}>
+        <div key = {i} className="survey-list-item">
           <SurveyDetails
             name = {item.name}
             participantCount = { item.participant_count }
@@ -42,12 +43,9 @@ class SurveyList extends Component {
   render(){
     const { surveys } = this.state;
     return(
-      <div>
-        <h1>Survey List</h1>
         <div>
           { this.renderSurveys(surveys) }
         </div>
-      </div>
     )}
   }
   export default SurveyList;

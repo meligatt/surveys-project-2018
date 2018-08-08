@@ -1,15 +1,18 @@
+import './index.scss';
 import React from 'react';
 
 const Footer = () => {
   return(
-    <div style = {{backgroundColor:'#EEE'}}>
-      <div>Frontend developer: melissa gattoni (meligatt@gmail.com)</div>
-      <div>Code challenge for Culture Amp</div>
-      <div>2018</div>
-      <a href="#">LinkedIn</a>
-      <a href="#">github</a>
-      <a href="#">email</a>
-    </div>
-    )
+    <footer className="footer">
+      <div className="footer-container">
+          Frontend developer: melissa gattoni (meligatt@gmail.com)
+          <br/>
+          Code challenge for Culture Amp - 2018
+          <a href="https://www.linkedin.com/in/melissa-gattoni-54975b49/">LinkedIn</a> |
+          <a href="https://github.com/meligatt">github</a>
+      </div>
+
+    </footer>
+  )
 }
 export default Footer;

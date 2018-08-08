@@ -1,3 +1,4 @@
+import './app-view.scss';
 import React from 'react';
 import { Route } from 'react-router-dom';
 import SurveysView from './surveys-view';
@@ -8,12 +9,14 @@ import Footer from '../components/footer';
 
 const AppView = () => {
   return(
-    <div className="App">
-      <Header />
-      <Main>
-        <Route exact path="/" component = { SurveysView } />
-        <Route path="/survey_results/:id" component = { SurveyResultsView }/>
-      </Main>
+    <div className="app-view">
+      <div className="app-view-container">
+        <Header />
+        <Main>
+          <Route exact path="/" component = { SurveysView } />
+          <Route path="/survey_results/:id" component = { SurveyResultsView }/>
+        </Main>
+      </div>
       <Footer/>
     </div>
   );
