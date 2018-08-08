@@ -1,3 +1,4 @@
+import './index.scss';
 import React, { Component } from 'react';
 import { makeRequest } from '../../lib/requests/make-request';
 import SurveyDetails from '../survey-details';
@@ -28,25 +29,29 @@ class SurveyResults extends Component{
       return null;
     }
     return(
-      <ul>
+      <div className="survey-results__themes">
         { themes.map((theme, i) => <SurveyThemeDetails theme = { theme } key = {i} />) }
-      </ul>
+      </div>
     )
   }
 
   render(){
     const { name, participant_count, response_rate, submitted_response_count, themes } = this.state.results;
     return(
-      <div>
-        <SurveyDetails
-          name = { name }
-          participantCount = { participant_count }
-          responseRate = { response_rate }
-          submittedResponseCount = { submitted_response_count }
-        />
-        <PercentagePie value = { response_rate }/>
-        <AverageRatingPerQuestion themes = { themes }/>
-        { this.renderSurveyThemes(themes) }
+      <div className="survey-results">
+        <div className="survey-results__container">
+          <SurveyDetails
+            name = { name }
+            participantCount = { participant_count }
+            responseRate = { response_rate }
+            submittedResponseCount = { submitted_response_count }
+          />
+          <PercentagePie value = { response_rate }/>
+          <AverageRatingPerQuestion themes = { themes }/>
+
+          { this.renderSurveyThemes(themes) }
+
+        </div>
       </div>
     )
   }

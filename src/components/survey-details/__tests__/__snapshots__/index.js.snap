@@ -18,85 +18,62 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p>
-           
-</p>,
-        <ul>
-          <li>
-                    Name: 
-          </li>
-          <li>
+        undefined,
+        <ul
+          className="survey-details__list"
+>
+          <li
+                    className="survey-details__item"
+          >
                     Participant count: 
           </li>
-          <li>
+          <li
+                    className="survey-details__item"
+          >
                     Response rate: 
                     NaN
+                    %
           </li>
-          <li>
+          <li
+                    className="survey-details__item"
+          >
                     Submitted response count: 
           </li>
 </ul>,
       ],
+      "className": "survey-details",
     },
     "ref": null,
     "rendered": Array [
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            undefined,
-            " ",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          undefined,
-          " ",
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <li>
-              Name: 
-</li>,
-            <li>
+            <li
+              className="survey-details__item"
+>
               Participant count: 
 </li>,
-            <li>
+            <li
+              className="survey-details__item"
+>
               Response rate: 
               NaN
+              %
 </li>,
-            <li>
+            <li
+              className="survey-details__item"
+>
               Submitted response count: 
 </li>,
           ],
+          "className": "survey-details__list",
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Name: ",
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Name: ",
-              undefined,
-            ],
-            "type": "li",
-          },
           Object {
             "instance": null,
             "key": undefined,
@@ -106,6 +83,7 @@ ShallowWrapper {
                 "Participant count: ",
                 undefined,
               ],
+              "className": "survey-details__item",
             },
             "ref": null,
             "rendered": Array [
@@ -122,12 +100,15 @@ ShallowWrapper {
               "children": Array [
                 "Response rate: ",
                 "NaN",
+                "%",
               ],
+              "className": "survey-details__item",
             },
             "ref": null,
             "rendered": Array [
               "Response rate: ",
               "NaN",
+              "%",
             ],
             "type": "li",
           },
@@ -140,6 +121,7 @@ ShallowWrapper {
                 "Submitted response count: ",
                 undefined,
               ],
+              "className": "survey-details__item",
             },
             "ref": null,
             "rendered": Array [
@@ -161,85 +143,62 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
-             
-</p>,
-          <ul>
-            <li>
-                        Name: 
-            </li>
-            <li>
+          undefined,
+          <ul
+            className="survey-details__list"
+>
+            <li
+                        className="survey-details__item"
+            >
                         Participant count: 
             </li>
-            <li>
+            <li
+                        className="survey-details__item"
+            >
                         Response rate: 
                         NaN
+                        %
             </li>
-            <li>
+            <li
+                        className="survey-details__item"
+            >
                         Submitted response count: 
             </li>
 </ul>,
         ],
+        "className": "survey-details",
       },
       "ref": null,
       "rendered": Array [
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              undefined,
-              " ",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            undefined,
-            " ",
-          ],
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <li>
-                Name: 
-</li>,
-              <li>
+              <li
+                className="survey-details__item"
+>
                 Participant count: 
 </li>,
-              <li>
+              <li
+                className="survey-details__item"
+>
                 Response rate: 
                 NaN
+                %
 </li>,
-              <li>
+              <li
+                className="survey-details__item"
+>
                 Submitted response count: 
 </li>,
             ],
+            "className": "survey-details__list",
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Name: ",
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "Name: ",
-                undefined,
-              ],
-              "type": "li",
-            },
             Object {
               "instance": null,
               "key": undefined,
@@ -249,6 +208,7 @@ ShallowWrapper {
                   "Participant count: ",
                   undefined,
                 ],
+                "className": "survey-details__item",
               },
               "ref": null,
               "rendered": Array [
@@ -265,12 +225,15 @@ ShallowWrapper {
                 "children": Array [
                   "Response rate: ",
                   "NaN",
+                  "%",
                 ],
+                "className": "survey-details__item",
               },
               "ref": null,
               "rendered": Array [
                 "Response rate: ",
                 "NaN",
+                "%",
               ],
               "type": "li",
             },
@@ -283,6 +246,7 @@ ShallowWrapper {
                   "Submitted response count: ",
                   undefined,
                 ],
+                "className": "survey-details__item",
               },
               "ref": null,
               "rendered": Array [

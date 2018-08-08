@@ -3,9 +3,9 @@ import React from 'react';
 
 const Main = ({children}) => {
   return (
-    <main className="main">
-      <div className="main-container">
-        <div className="main-content">
+    <main className="main" role="main">
+      <div className="main__container">
+        <div className="main__content">
           { children }
         </div>
       </div>

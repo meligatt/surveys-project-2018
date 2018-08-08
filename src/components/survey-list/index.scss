@@ -1,17 +1,33 @@
-.survey-list-item {
-  background: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  a {
-    color: #3e4543;
+.survey-list{
+  .survey-list__title {
+    color: rgba(0,0,0,0.74);
+  }
+  .survey-list__card {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .survey-list__card-title{
+    color: rgba(0,0,0,0.64);
+  }
+  .survey-list__card-content{
+    padding: 0;
+  }
+  .survey-list__card-actions{
+    padding: 1rem;
+  }
+  .survey-list__card-link{
+    color: rgba(0,0,0,0.84);
     text-transform: none;
     letter-spacing: normal;
     transition: color .2s ease-in;
+    text-transform: uppercase;
+    font-size: 0.85rem;
     &:hover {
       color: #f14b5d;
     }

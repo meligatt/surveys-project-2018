@@ -10,12 +10,11 @@ const SurveyDetails = ({
 }) => {
   return(
     <div className="survey-details">
-      <div className="survey-details__title">{ name }</div>
-      <ul>
-        <li>Name: { name }</li>
-        <li>Participant count: { participantCount }</li>
-        <li>Response rate: { setValueAsPercentage(responseRate) }</li>
-        <li>Submitted response count: { submittedResponseCount }</li>
+      { name && <h3 className="survey-details__title">{ name }</h3> }
+      <ul className="survey-details__list">
+        <li className="survey-details__item">Participant count: { participantCount }</li>
+        <li className="survey-details__item">Response rate: { setValueAsPercentage(responseRate) }%</li>
+        <li className="survey-details__item">Submitted response count: { submittedResponseCount }</li>
       </ul>
     </div>
   );

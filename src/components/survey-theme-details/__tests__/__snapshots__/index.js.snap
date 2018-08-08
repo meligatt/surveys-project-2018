@@ -23,79 +23,49 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="survey-theme-details__container"
+>
         <h4>
-          Theme: 
-</h4>,
-        <strong>
-          Questions:
-</strong>,
-        <ul>
-          
-</ul>,
-      ],
+                Survey theme: 
+                <span
+                        className="survey-theme-details__name"
+                />
+        </h4>
+        <h5>
+                Questions:
+        </h5>
+        <ul
+                className="survey-theme-details__question-list"
+        >
+                
+        </ul>
+</div>,
+      "className": "survey-theme-details",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Theme: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Theme: ",
-          undefined,
-        ],
-        "type": "h4",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Questions:",
-        },
-        "ref": null,
-        "rendered": "Questions:",
-        "type": "strong",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [],
-        },
-        "ref": null,
-        "rendered": Array [],
-        "type": "ul",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
           <h4>
-            Theme: 
+            Survey theme: 
+            <span
+                        className="survey-theme-details__name"
+            />
 </h4>,
-          <strong>
+          <h5>
             Questions:
-</strong>,
-          <ul>
+</h5>,
+          <ul
+            className="survey-theme-details__question-list"
+>
             
 </ul>,
         ],
+        "className": "survey-theme-details__container",
       },
       "ref": null,
       "rendered": Array [
@@ -105,14 +75,27 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Theme: ",
-              undefined,
+              "Survey theme: ",
+              <span
+                className="survey-theme-details__name"
+/>,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Theme: ",
-            undefined,
+            "Survey theme: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "survey-theme-details__name",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
           ],
           "type": "h4",
         },
@@ -125,7 +108,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Questions:",
-          "type": "strong",
+          "type": "h5",
         },
         Object {
           "instance": null,
@@ -133,12 +116,125 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [],
+            "className": "survey-theme-details__question-list",
           },
           "ref": null,
           "rendered": Array [],
           "type": "ul",
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="survey-theme-details__container"
+>
+          <h4>
+                    Survey theme: 
+                    <span
+                              className="survey-theme-details__name"
+                    />
+          </h4>
+          <h5>
+                    Questions:
+          </h5>
+          <ul
+                    className="survey-theme-details__question-list"
+          >
+                    
+          </ul>
+</div>,
+        "className": "survey-theme-details",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Survey theme: 
+              <span
+                            className="survey-theme-details__name"
+              />
+</h4>,
+            <h5>
+              Questions:
+</h5>,
+            <ul
+              className="survey-theme-details__question-list"
+>
+              
+</ul>,
+          ],
+          "className": "survey-theme-details__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Survey theme: ",
+                <span
+                  className="survey-theme-details__name"
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Survey theme: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "className": "survey-theme-details__name",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Questions:",
+            },
+            "ref": null,
+            "rendered": "Questions:",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [],
+              "className": "survey-theme-details__question-list",
+            },
+            "ref": null,
+            "rendered": Array [],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

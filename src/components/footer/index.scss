@@ -1,13 +1,22 @@
 .footer {
-  .footer-container{
+  .footer__container{
     height: 70px;
     bottom:0;
+    border-top: 1px solid #CCC;
+    display: flex;
+    justify-content: space-around;
   }
-  .footer-content{
-    max-width: 1020px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .footer__author {
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,0.5);
+  }
+  .footer__link-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .footer__list-item {
+    margin: 1rem;
   }
 }

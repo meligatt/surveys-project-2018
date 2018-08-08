@@ -1,10 +1,11 @@
-.header {
-  height: 90px;
-  background: white;
-  width: 100%;
-  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
-  padding: 0 20px;
-  .logo {
+.main-nav {
+  .main-nav__container {
+    height: 90px;
+    background: white;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    padding: 0 20px;
+  }
+  .main-nav__logo {
     display: inline-block;
     border: 2px solid #f14b5d;
     font-size: 1.5rem;
@@ -12,13 +13,13 @@
     text-decoration: none;
     padding: 0.5rem;
   }
-  .nav-main {
+  .main-nav__menu {
     display: inline-block;
-    li {
-      display: inline-block;
-      padding: 20px 15px;
-      font-size: 1rem;
-    }
+  }
+  .main-nav__item {
+    display: inline-block;
+    padding: 20px 15px;
+    font-size: 1rem;
     a {
       color: #3e4543;
       text-transform: none;

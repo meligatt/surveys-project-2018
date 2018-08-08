@@ -17,145 +17,121 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <div>
-          Frontend developer: melissa gattoni (meligatt@gmail.com)
-</div>,
-        <div>
-          Code challenge for Culture Amp
-</div>,
-        <div>
-          2018
-</div>,
-        <a
-          href="#"
+      "children": <div
+        className="footer__container"
 >
-          LinkedIn
-</a>,
-        <a
-          href="#"
->
-          github
-</a>,
-        <a
-          href="#"
->
-          email
-</a>,
-      ],
-      "style": Object {
-        "backgroundColor": "#EEE",
-      },
+        <div
+                className="footer__author"
+        >
+                <span>
+                        Code challenge for Culture Amp - 2018 by Melissa Gattoni
+                </span>
+                <img
+                        alt="logo"
+                        height="40"
+                        src="ahsoka.svg"
+                        width="auto"
+                />
+        </div>
+        <ul
+                className="footer__link-list"
+        >
+                <li
+                        className="footer__list-item"
+                >
+                        <a
+                                href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >
+                                LinkedIn
+                        </a>
+                </li>
+                <li
+                        className="footer__list-item"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                >
+                        <a
+                                href="https://github.com/meligatt"
+                        >
+                                Github
+                        </a>
+                </li>
+                <li
+                        className="footer__list-item"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                >
+                        <a
+                                href="https://twitter.com/meligatt"
+                        >
+                                Twitter
+                        </a>
+                </li>
+        </ul>
+</div>,
+      "className": "footer",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Frontend developer: melissa gattoni (meligatt@gmail.com)",
-        },
-        "ref": null,
-        "rendered": "Frontend developer: melissa gattoni (meligatt@gmail.com)",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Code challenge for Culture Amp",
-        },
-        "ref": null,
-        "rendered": "Code challenge for Culture Amp",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "2018",
-        },
-        "ref": null,
-        "rendered": "2018",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "LinkedIn",
-          "href": "#",
-        },
-        "ref": null,
-        "rendered": "LinkedIn",
-        "type": "a",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "github",
-          "href": "#",
-        },
-        "ref": null,
-        "rendered": "github",
-        "type": "a",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "email",
-          "href": "#",
-        },
-        "ref": null,
-        "rendered": "email",
-        "type": "a",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
-            Frontend developer: melissa gattoni (meligatt@gmail.com)
-</div>,
-          <div>
-            Code challenge for Culture Amp
-</div>,
-          <div>
-            2018
-</div>,
-          <a
-            href="#"
+          <div
+            className="footer__author"
 >
-            LinkedIn
-</a>,
-          <a
-            href="#"
+            <span>
+                        Code challenge for Culture Amp - 2018 by Melissa Gattoni
+            </span>
+            <img
+                        alt="logo"
+                        height="40"
+                        src="ahsoka.svg"
+                        width="auto"
+            />
+</div>,
+          <ul
+            className="footer__link-list"
 >
-            github
-</a>,
-          <a
-            href="#"
->
-            email
-</a>,
+            <li
+                        className="footer__list-item"
+            >
+                        <a
+                                    href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                        >
+                                    LinkedIn
+                        </a>
+            </li>
+            <li
+                        className="footer__list-item"
+                        rel="noopener noreferrer"
+                        target="_blank"
+            >
+                        <a
+                                    href="https://github.com/meligatt"
+                        >
+                                    Github
+                        </a>
+            </li>
+            <li
+                        className="footer__list-item"
+                        rel="noopener noreferrer"
+                        target="_blank"
+            >
+                        <a
+                                    href="https://twitter.com/meligatt"
+                        >
+                                    Twitter
+                        </a>
+            </li>
+</ul>,
         ],
-        "style": Object {
-          "backgroundColor": "#EEE",
-        },
+        "className": "footer__container",
       },
       "ref": null,
       "rendered": Array [
@@ -164,10 +140,47 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Frontend developer: melissa gattoni (meligatt@gmail.com)",
+            "children": Array [
+              <span>
+                Code challenge for Culture Amp - 2018 by Melissa Gattoni
+</span>,
+              <img
+                alt="logo"
+                height="40"
+                src="ahsoka.svg"
+                width="auto"
+/>,
+            ],
+            "className": "footer__author",
           },
           "ref": null,
-          "rendered": "Frontend developer: melissa gattoni (meligatt@gmail.com)",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Code challenge for Culture Amp - 2018 by Melissa Gattoni",
+              },
+              "ref": null,
+              "rendered": "Code challenge for Culture Amp - 2018 by Melissa Gattoni",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "height": "40",
+                "src": "ahsoka.svg",
+                "width": "auto",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
           "type": "div",
         },
         Object {
@@ -175,61 +188,454 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Code challenge for Culture Amp",
+            "children": Array [
+              <li
+                className="footer__list-item"
+>
+                <a
+                                href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                >
+                                LinkedIn
+                </a>
+</li>,
+              <li
+                className="footer__list-item"
+                rel="noopener noreferrer"
+                target="_blank"
+>
+                <a
+                                href="https://github.com/meligatt"
+                >
+                                Github
+                </a>
+</li>,
+              <li
+                className="footer__list-item"
+                rel="noopener noreferrer"
+                target="_blank"
+>
+                <a
+                                href="https://twitter.com/meligatt"
+                >
+                                Twitter
+                </a>
+</li>,
+            ],
+            "className": "footer__link-list",
           },
           "ref": null,
-          "rendered": "Code challenge for Culture Amp",
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "2018",
-          },
-          "ref": null,
-          "rendered": "2018",
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "LinkedIn",
-            "href": "#",
-          },
-          "ref": null,
-          "rendered": "LinkedIn",
-          "type": "a",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "github",
-            "href": "#",
-          },
-          "ref": null,
-          "rendered": "github",
-          "type": "a",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "email",
-            "href": "#",
-          },
-          "ref": null,
-          "rendered": "email",
-          "type": "a",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  LinkedIn
+</a>,
+                "className": "footer__list-item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "LinkedIn",
+                  "href": "https://www.linkedin.com/in/melissa-gattoni-54975b49/",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "LinkedIn",
+                "type": "a",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="https://github.com/meligatt"
+>
+                  Github
+</a>,
+                "className": "footer__list-item",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Github",
+                  "href": "https://github.com/meligatt",
+                },
+                "ref": null,
+                "rendered": "Github",
+                "type": "a",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="https://twitter.com/meligatt"
+>
+                  Twitter
+</a>,
+                "className": "footer__list-item",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Twitter",
+                  "href": "https://twitter.com/meligatt",
+                },
+                "ref": null,
+                "rendered": "Twitter",
+                "type": "a",
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
         },
       ],
       "type": "div",
+    },
+    "type": "footer",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="footer__container"
+>
+          <div
+                    className="footer__author"
+          >
+                    <span>
+                              Code challenge for Culture Amp - 2018 by Melissa Gattoni
+                    </span>
+                    <img
+                              alt="logo"
+                              height="40"
+                              src="ahsoka.svg"
+                              width="auto"
+                    />
+          </div>
+          <ul
+                    className="footer__link-list"
+          >
+                    <li
+                              className="footer__list-item"
+                    >
+                              <a
+                                        href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                              >
+                                        LinkedIn
+                              </a>
+                    </li>
+                    <li
+                              className="footer__list-item"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                    >
+                              <a
+                                        href="https://github.com/meligatt"
+                              >
+                                        Github
+                              </a>
+                    </li>
+                    <li
+                              className="footer__list-item"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                    >
+                              <a
+                                        href="https://twitter.com/meligatt"
+                              >
+                                        Twitter
+                              </a>
+                    </li>
+          </ul>
+</div>,
+        "className": "footer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="footer__author"
+>
+              <span>
+                            Code challenge for Culture Amp - 2018 by Melissa Gattoni
+              </span>
+              <img
+                            alt="logo"
+                            height="40"
+                            src="ahsoka.svg"
+                            width="auto"
+              />
+</div>,
+            <ul
+              className="footer__link-list"
+>
+              <li
+                            className="footer__list-item"
+              >
+                            <a
+                                          href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                                          rel="noopener noreferrer"
+                                          target="_blank"
+                            >
+                                          LinkedIn
+                            </a>
+              </li>
+              <li
+                            className="footer__list-item"
+                            rel="noopener noreferrer"
+                            target="_blank"
+              >
+                            <a
+                                          href="https://github.com/meligatt"
+                            >
+                                          Github
+                            </a>
+              </li>
+              <li
+                            className="footer__list-item"
+                            rel="noopener noreferrer"
+                            target="_blank"
+              >
+                            <a
+                                          href="https://twitter.com/meligatt"
+                            >
+                                          Twitter
+                            </a>
+              </li>
+</ul>,
+          ],
+          "className": "footer__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span>
+                  Code challenge for Culture Amp - 2018 by Melissa Gattoni
+</span>,
+                <img
+                  alt="logo"
+                  height="40"
+                  src="ahsoka.svg"
+                  width="auto"
+/>,
+              ],
+              "className": "footer__author",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Code challenge for Culture Amp - 2018 by Melissa Gattoni",
+                },
+                "ref": null,
+                "rendered": "Code challenge for Culture Amp - 2018 by Melissa Gattoni",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "logo",
+                  "height": "40",
+                  "src": "ahsoka.svg",
+                  "width": "auto",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="footer__list-item"
+>
+                  <a
+                                    href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                  >
+                                    LinkedIn
+                  </a>
+</li>,
+                <li
+                  className="footer__list-item"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  <a
+                                    href="https://github.com/meligatt"
+                  >
+                                    Github
+                  </a>
+</li>,
+                <li
+                  className="footer__list-item"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  <a
+                                    href="https://twitter.com/meligatt"
+                  >
+                                    Twitter
+                  </a>
+</li>,
+              ],
+              "className": "footer__link-list",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+>
+                    LinkedIn
+</a>,
+                  "className": "footer__list-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "LinkedIn",
+                    "href": "https://www.linkedin.com/in/melissa-gattoni-54975b49/",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": "LinkedIn",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="https://github.com/meligatt"
+>
+                    Github
+</a>,
+                  "className": "footer__list-item",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Github",
+                    "href": "https://github.com/meligatt",
+                  },
+                  "ref": null,
+                  "rendered": "Github",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="https://twitter.com/meligatt"
+>
+                    Twitter
+</a>,
+                  "className": "footer__list-item",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Twitter",
+                    "href": "https://twitter.com/meligatt",
+                  },
+                  "ref": null,
+                  "rendered": "Twitter",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "footer",
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -2,21 +2,21 @@ import './index.scss';
 import React from 'react';
 
 const getAverageRatingPerQuestion = (question) => {
-    const answeredQuestionsArray = question.survey_responses.filter((item) => item.response_content !== "");
+  const answeredQuestionsArray = question.survey_responses.filter((item) => item.response_content !== "");
 
-    const responseContentTotal = answeredQuestionsArray.reduce((accumulator, currentValue) => {
-      const responseContent = parseInt(currentValue.response_content, 10);
-      if (!isNaN(responseContent)){
-        return (accumulator + responseContent);
-      }
-      return accumulator + 0;
-    }, 0);
+  const responseContentTotal = answeredQuestionsArray.reduce((accumulator, currentValue) => {
+    const responseContent = parseInt(currentValue.response_content, 10);
+    if (!isNaN(responseContent)){
+      return (accumulator + responseContent);
+    }
+    return accumulator + 0;
+  }, 0);
 
-     return {
-       question: question.description,
-       average: responseContentTotal / answeredQuestionsArray.length
-     };
- }
+  return {
+    question: question.description,
+    average: responseContentTotal / answeredQuestionsArray.length
+  };
+}
 
 const AverageRatingPerQuestion = ({
   themes
@@ -33,18 +33,22 @@ const AverageRatingPerQuestion = ({
     return averageRatingPerQuestion;
   });
 
-     return(
-       <div className="average-rating-container">
-         <div>
-           <p>the average rating (from 1 to 5) for each question</p>
-           {
-             result.map((item) => {
-               return item.map((value, i) => <p key={i}>{ value.question }: {value.average}</p>)
-             })
-           }
-         </div>
-       </div>
-    )
-  }
+  return(
+    <div className="question-average-rating">
+    <div className="question-average-rating__container">
+      <h4>The average rating for each question <small>(from 1 to 5)</small></h4>
+      {
+        result.map((item) => {
+          return item.map((value, i) =>
+          <div className="question-average-rating__item" key={i}>
+            <div className="question-average-rating__question">{ value.question }</div>
+            <div className="question-average-rating__value">{value.average}</div>
+          </div>)
+        })
+      }
+    </div>
+    </div>
+  )
+}
 
 export default AverageRatingPerQuestion;

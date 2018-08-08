@@ -17,19 +17,75 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        "participation rate as a percentage: ",
-        "NaN",
-        "% ...pie-chart here...",
-      ],
+      "children": <div
+        className="percentage-pie__container"
+>
+        <h4>
+                Participation rate as a percentage
+        </h4>
+        <div
+                className="percentage-pie__percentage"
+        >
+                NaN
+                %
+        </div>
+</div>,
+      "className": "percentage-pie",
     },
     "ref": null,
-    "rendered": Array [
-      "participation rate as a percentage: ",
-      "NaN",
-      "% ...pie-chart here...",
-    ],
-    "type": "p",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h4>
+            Participation rate as a percentage
+</h4>,
+          <div
+            className="percentage-pie__percentage"
+>
+            NaN
+            %
+</div>,
+        ],
+        "className": "percentage-pie__container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Participation rate as a percentage",
+          },
+          "ref": null,
+          "rendered": "Participation rate as a percentage",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "NaN",
+              "%",
+            ],
+            "className": "percentage-pie__percentage",
+          },
+          "ref": null,
+          "rendered": Array [
+            "NaN",
+            "%",
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -37,19 +93,75 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          "participation rate as a percentage: ",
-          "NaN",
-          "% ...pie-chart here...",
-        ],
+        "children": <div
+          className="percentage-pie__container"
+>
+          <h4>
+                    Participation rate as a percentage
+          </h4>
+          <div
+                    className="percentage-pie__percentage"
+          >
+                    NaN
+                    %
+          </div>
+</div>,
+        "className": "percentage-pie",
       },
       "ref": null,
-      "rendered": Array [
-        "participation rate as a percentage: ",
-        "NaN",
-        "% ...pie-chart here...",
-      ],
-      "type": "p",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Participation rate as a percentage
+</h4>,
+            <div
+              className="percentage-pie__percentage"
+>
+              NaN
+              %
+</div>,
+          ],
+          "className": "percentage-pie__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Participation rate as a percentage",
+            },
+            "ref": null,
+            "rendered": "Participation rate as a percentage",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "NaN",
+                "%",
+              ],
+              "className": "percentage-pie__percentage",
+            },
+            "ref": null,
+            "rendered": Array [
+              "NaN",
+              "%",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

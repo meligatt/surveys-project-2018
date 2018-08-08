@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="800"
+height="600"
+viewbox="0 0 800 600"
+version="1.1"
+class="character">
+
+<g id="face" transform="translate(250, 130)">
+  <rect id="face-outline" height="230" width="300" x="0" y="0" fill="#ed9252" rx="40"/>
+  <g id="face-makeup">
+    <g id="makeup-left-triangle" transform="translate(90,30)">
+      <rect x="0" y="0" width="20" height="20" transform="rotate(45)" fill="#FFFFFF" />
+    </g>
+    <g id="makeup-central-decoration" transform="translate(90,20)">
+      <line x1="40" y1="0" x2="40" y2="60" stroke-linecap="round" stroke-width="5" stroke="#FFFFFF"/>
+      <rect x="50" y="-30" width="20" height="20" transform="rotate(45)" fill="#F98A38" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+      <line x1="75" y1="0" x2="75" y2="60" stroke-linecap="round" stroke-width="5" stroke="#FFFFFF"/>
+    </g>
+    <g id="makeup-right-triangle" transform="translate(200,30) scale(-1,1)">
+      <rect x="0" y="0" width="20" height="20" transform="rotate(45)" fill="#FFFFFF" />
+    </g>
+  </g>
+  <g id="eyes" transform="translate(0, 20)">
+    <g transform="translate(0,0)">
+      <path d="M20 60 Q 70 20 130 60" stroke="#FFFFFF" stroke-width="6" fill="transparent" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(145,0)">
+      <path d="M20 60 Q 70 20 130 60" stroke="#FFFFFF" stroke-width="6" fill="transparent" stroke-linecap="round"/>
+    </g>
+    <g id="left-eye" class="eyes" transform="translate(10, 90)">
+      <circle id="eye" cx="60" r="30" fill="#35404a"/>
+      <g class="eyeslashes" transform="translate(23, -20)">
+        <line x1="0" y1="0" x2="10" y2="10" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="10" x2="10" y2="20" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="20" x2="10" y2="30" stroke="black" stroke-width="4"/>
+      </g>
+    </g>
+    <g id="right-eye" class="eyes" transform="translate(280, 90) scale(-1, 1)">
+      <circle id="eye" cx="60" r="30" fill="#35404a"/>
+      <g class="eyeslashes" transform="translate(23, -20)">
+        <line x1="0" y1="0" x2="10" y2="10" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="10" x2="10" y2="20" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="20" x2="10" y2="30" stroke="black" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+  <g class="nose" transform="translate(135,120) scale(0.3)">
+    <polygon fill="#FCC06E" stroke="#EA6F29" stroke-width="6" points="30,4 4,60 60,60" stroke-linejoin="round"/>
+  </g>
+
+  <g class="mouth" transform="translate(135,170)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke-linecap="round" stroke-width="5" stroke="#000000"/>
+  </g>
+</g> <!--  close face group -->
+
+
+<g class="montrals-group">
+  <g class="montrals--central" transform="translate(0, 0)">
+    <g class="montrals" transform="translate(230, 0)">
+      <polygon fill="#EFEFED" points="0,30 10,170 180,100" stroke-linejoin="round" stroke-width="12" stroke="#E4E4E4" />
+    </g>
+    <g class="montrals-design" transform="translate(230, 0)">
+      <polygon fill="#2E76A5" points="0,30 2,60 30,45" stroke-linejoin="round" stroke-width="5" stroke="#2E76A5"/>
+    </g>
+    <g class="montrals" transform="translate(560, 0) scale(-1, 1)">
+      <polygon fill="#EFEFED" points="0,30 10,170 180,100" stroke-linejoin="round" stroke-width="12" stroke="#E4E4E4"/>
+    </g>
+    <g class="montrals" transform="translate(560, 0) scale(-1, 1)">
+      <polygon fill="#2E76A5" points="0,30 2,60 30,45" stroke-linejoin="round" stroke-width="5" stroke="#2E76A5"/>
+    </g>
+  </g>
+
+  <g class="montrals-triangle-hair" transform="translate(150, 100)">
+    <polygon fill="#EFEFED" points="90,0 0,200 100,400" stroke-linejoin="round" stroke-width="12" stroke="#E4E4E4"/>
+    <g class="montrals-design-bottom" transform="translate(0,150)">
+      <line x1="20" y1="20" x2="95" y2="90" stroke-linecap="round" stroke-width="12" stroke="#2E76A5"/>
+      <line x1="5" y1="50" x2="95" y2="130" stroke-linecap="round" stroke-width="12" stroke="#2E76A5"/>
+      <line x1="40" y1="120" x2="95" y2="170" stroke-linecap="round" stroke-width="12" stroke="#2E76A5"/>
+    </g>
+  </g>
+  <g class="montrals-triangle-hair" transform="translate(650, 100) scale(-1, 1)">
+    <polygon fill="#EFEFED" points="100,0 0,200 100,400" stroke-linejoin="round" stroke-width="12" stroke="#E4E4E4"/>
+    <g class="montrals-design-bottom" transform="translate(0,150)">
+      <line x1="20" y1="20" x2="95" y2="90" stroke-linecap="round" stroke-width="12" stroke="#2E76A5"/>
+      <line x1="5" y1="50" x2="95" y2="130" stroke-linecap="round" stroke-width="12" stroke="#2E76A5"/>
+      <line x1="40" y1="120" x2="95" y2="170" stroke-linecap="round" stroke-width="12" stroke="#2E76A5"/>
+    </g>
+  </g>
+</g>
+
+<g class="triangle-crown-decoration" transform="translate(0, 10)">
+  <g class="triangle-decoration--side" transform="translate(0, 0)">
+    <g class="triangle" transform="translate(195, 210) rotate(-90)">
+      <polygon fill="#9F9D68" points="40,30 0,60 60,70" stroke-linejoin="round" stroke-width="5" stroke="#9F9D68"/>
+    </g>
+    <g class="triangle" transform="translate(240, 70) rotate(-35 80 40)">
+      <polygon fill="#9F9D68" points="30,0 0,60 60,60" stroke-linejoin="round" stroke-width="5" stroke="#9F9D68"/>
+    </g>
+    <g class="triangle" transform="translate(300, 80)">
+      <polygon fill="#9F9D68" points="15,0 0,60 60,60" stroke-linejoin="round" stroke-width="5" stroke="#9F9D68"/>
+    </g>
+  </g>
+
+  <g class="triangle-decoration--central" transform="translate(340, 18) scale(1.5)">
+    <polygon fill="#9F9D68" points="40,35 0,80 80,80" stroke-linejoin="round" stroke-width="5" stroke="#9F9D68"/>
+  </g>
+
+  <g class="triangle-decoration--side" transform="translate(800, 0) scale(-1, 1)">
+    <g class="triangle" transform="translate(195, 210) rotate(-90)">
+      <polygon fill="#9F9D68" points="40,30 0,60 60,70" stroke-linejoin="round" stroke-width="5" stroke="#9F9D68"/>
+    </g>
+    <g class="triangle" transform="translate(240, 70) rotate(-35 80 40)">
+      <polygon fill="#9F9D68" points="30,0 0,60 60,60" stroke-linejoin="round" stroke-width="5" stroke="#9F9D68"/>
+    </g>
+    <g class="triangle" transform="translate(300, 80)">
+      <polygon fill="#9F9D68" points="15,0 0,70 60,60" stroke-linejoin="round" stroke-width="5" stroke="#9F9D68"/>
+    </g>
+  </g>
+</g>
+
+</svg>

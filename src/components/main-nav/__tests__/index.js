@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../index';
+import MainNav from '../index';
 
-describe('Header', () => {
+describe('MainNav', () => {
   it('renders correctly', () => {
     const wrapper = shallow(
-      <Header />
+      <MainNav />
     );
 
     expect(wrapper).toMatchSnapshot();

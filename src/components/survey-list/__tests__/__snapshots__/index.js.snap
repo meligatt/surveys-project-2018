@@ -18,13 +18,22 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Survey List
-</h1>,
-        <div>
-          No list available
+        <h2
+          className="survey-list__title"
+>
+          Surveys:
+</h2>,
+        <div
+          className="survey-list__card"
+>
+          <div
+                    className="survey-list__card-content"
+          >
+                    No surveys available
+          </div>
 </div>,
       ],
+      "className": "survey-list",
     },
     "ref": null,
     "rendered": Array [
@@ -33,21 +42,38 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Survey List",
+          "children": "Surveys:",
+          "className": "survey-list__title",
         },
         "ref": null,
-        "rendered": "Survey List",
-        "type": "h1",
+        "rendered": "Surveys:",
+        "type": "h2",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "No list available",
+          "children": <div
+            className="survey-list__card-content"
+>
+            No surveys available
+</div>,
+          "className": "survey-list__card",
         },
         "ref": null,
-        "rendered": "No list available",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No surveys available",
+            "className": "survey-list__card-content",
+          },
+          "ref": null,
+          "rendered": "No surveys available",
+          "type": "div",
+        },
         "type": "div",
       },
     ],
@@ -60,13 +86,22 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Survey List
-</h1>,
-          <div>
-            No list available
+          <h2
+            className="survey-list__title"
+>
+            Surveys:
+</h2>,
+          <div
+            className="survey-list__card"
+>
+            <div
+                        className="survey-list__card-content"
+            >
+                        No surveys available
+            </div>
 </div>,
         ],
+        "className": "survey-list",
       },
       "ref": null,
       "rendered": Array [
@@ -75,21 +110,38 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Survey List",
+            "children": "Surveys:",
+            "className": "survey-list__title",
           },
           "ref": null,
-          "rendered": "Survey List",
-          "type": "h1",
+          "rendered": "Surveys:",
+          "type": "h2",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "No list available",
+            "children": <div
+              className="survey-list__card-content"
+>
+              No surveys available
+</div>,
+            "className": "survey-list__card",
           },
           "ref": null,
-          "rendered": "No list available",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "No surveys available",
+              "className": "survey-list__card-content",
+            },
+            "ref": null,
+            "rendered": "No surveys available",
+            "type": "div",
+          },
           "type": "div",
         },
       ],

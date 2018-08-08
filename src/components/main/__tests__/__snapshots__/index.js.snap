@@ -3,15 +3,20 @@
 exports[`Main renders correctly 1`] = `
 <main
   className="main"
+  role="main"
 >
   <div
-    className="main-content"
+    className="main__container"
   >
-    <div>
-      some
-    </div>
-    <div>
-      children
+    <div
+      className="main__content"
+    >
+      <div>
+        some
+      </div>
+      <div>
+        children
+      </div>
     </div>
   </div>
 </main>
