@@ -6,6 +6,9 @@ const Footer = () => {
       <div>Frontend developer: melissa gattoni (meligatt@gmail.com)</div>
       <div>Code challenge for Culture Amp</div>
       <div>2018</div>
+      <a href="#">LinkedIn</a>
+      <a href="#">github</a>
+      <a href="#">email</a>
     </div>
     )
 }
