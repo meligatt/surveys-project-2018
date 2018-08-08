@@ -101,6 +101,8 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "react-test-renderer": "^16.4.2"
+    "node-sass": "^4.9.2",
+    "react-test-renderer": "^16.4.2",
+    "sass-loader": "^7.1.0"
   }
 }

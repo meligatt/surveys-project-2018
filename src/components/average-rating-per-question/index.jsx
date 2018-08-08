@@ -1,3 +1,4 @@
+import './index.scss';
 import React from 'react';
 
 const getAverageRatingPerQuestion = (question) => {
@@ -33,7 +34,7 @@ const AverageRatingPerQuestion = ({
   });
 
      return(
-       <div>
+       <div className="average-rating-container">
          <div>
            <p>the average rating (from 1 to 5) for each question</p>
            {
