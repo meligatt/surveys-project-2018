@@ -12,6 +12,7 @@ const AppView = () => {
   return(
     <div className="app-view">
       <div className="app-view__container">
+        <a class="skip-link" href="#main">Skip to main content</a>
         <MainNav />
         <Main>
           <Route exact path="/" component = { SurveysView } />

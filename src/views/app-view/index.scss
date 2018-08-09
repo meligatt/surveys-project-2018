@@ -3,4 +3,13 @@
   .app-view__container {
     min-height: calc(100vh - 70px);
   }
+  .skip-link {
+    background-color: #FFF;
+    position: absolute;
+    top:-100px;
+  }
+
+  .skip-link:focus {
+    top: 7px;
+  }
 }

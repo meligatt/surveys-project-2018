@@ -27,7 +27,7 @@ ShallowWrapper {
                         Code challenge for Culture Amp - 2018 by Melissa Gattoni
                 </span>
                 <img
-                        alt="logo"
+                        alt="Author logo"
                         height="40"
                         src="ahsoka.svg"
                         width="auto"
@@ -87,7 +87,7 @@ ShallowWrapper {
                         Code challenge for Culture Amp - 2018 by Melissa Gattoni
             </span>
             <img
-                        alt="logo"
+                        alt="Author logo"
                         height="40"
                         src="ahsoka.svg"
                         width="auto"
@@ -145,7 +145,7 @@ ShallowWrapper {
                 Code challenge for Culture Amp - 2018 by Melissa Gattoni
 </span>,
               <img
-                alt="logo"
+                alt="Author logo"
                 height="40"
                 src="ahsoka.svg"
                 width="auto"
@@ -171,7 +171,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "alt": "logo",
+                "alt": "Author logo",
                 "height": "40",
                 "src": "ahsoka.svg",
                 "width": "auto",
@@ -340,7 +340,7 @@ ShallowWrapper {
                               Code challenge for Culture Amp - 2018 by Melissa Gattoni
                     </span>
                     <img
-                              alt="logo"
+                              alt="Author logo"
                               height="40"
                               src="ahsoka.svg"
                               width="auto"
@@ -400,7 +400,7 @@ ShallowWrapper {
                             Code challenge for Culture Amp - 2018 by Melissa Gattoni
               </span>
               <img
-                            alt="logo"
+                            alt="Author logo"
                             height="40"
                             src="ahsoka.svg"
                             width="auto"
@@ -458,7 +458,7 @@ ShallowWrapper {
                   Code challenge for Culture Amp - 2018 by Melissa Gattoni
 </span>,
                 <img
-                  alt="logo"
+                  alt="Author logo"
                   height="40"
                   src="ahsoka.svg"
                   width="auto"
@@ -484,7 +484,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "alt": "logo",
+                  "alt": "Author logo",
                   "height": "40",
                   "src": "ahsoka.svg",
                   "width": "auto",

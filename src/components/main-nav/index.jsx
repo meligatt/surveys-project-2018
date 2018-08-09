@@ -16,9 +16,6 @@ const MainNav = () => {
         <li className="main-nav__item">
           <Link to="/about">About</Link>
         </li>
-        <li className="main-nav__item">
-          <Link to="/about">Help</Link>
-        </li>
       </ul>
     </div>
   </nav>

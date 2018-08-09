@@ -5,7 +5,8 @@ height="600"
 viewbox="0 0 800 600"
 version="1.1"
 class="character">
-
+<title>Author logo</title>
+<desc>Logo with a character face</desc>
 <g id="face" transform="translate(250, 130)">
   <rect id="face-outline" height="230" width="300" x="0" y="0" fill="#ed9252" rx="40"/>
   <g id="face-makeup">
