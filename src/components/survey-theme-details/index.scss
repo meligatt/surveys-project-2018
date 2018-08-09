@@ -1,6 +1,8 @@
+@import 'src/styles/abstracts/functions/_get-color';
+
 .survey-theme-details {
   .survey-theme-details__container {
-    background-color: #e8f1f3;
+    background-color: getColor(aquaHaze);
     padding: 2rem;
     margin: 1rem 0;
   }
@@ -25,5 +27,8 @@
     li {
       margin: 1rem 0;
     }
+  }
+  .survey-theme-details__star{
+    color: getColor(orange);
   }
 }

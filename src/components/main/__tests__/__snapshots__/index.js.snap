@@ -3,6 +3,7 @@
 exports[`Main renders correctly 1`] = `
 <main
   className="main"
+  id="main"
   role="main"
 >
   <div

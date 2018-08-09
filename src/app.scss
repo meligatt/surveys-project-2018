@@ -1,3 +1,6 @@
+@import 'src/styles/abstracts/functions/_get-color';
+
 body {
   font-size: 1rem;
+  color: getColor(black);
 }

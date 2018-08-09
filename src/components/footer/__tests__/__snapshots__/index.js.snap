@@ -39,34 +39,32 @@ ShallowWrapper {
                 <li
                         className="footer__list-item"
                 >
-                        <a
-                                href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                        <Link
+                                replace={false}
+                                to="/"
                         >
-                                LinkedIn
-                        </a>
+                                Home
+                        </Link>
                 </li>
                 <li
                         className="footer__list-item"
-                        rel="noopener noreferrer"
-                        target="_blank"
                 >
-                        <a
-                                href="https://github.com/meligatt"
+                        <Link
+                                replace={false}
+                                to="/about"
                         >
-                                Github
-                        </a>
+                                About
+                        </Link>
                 </li>
                 <li
                         className="footer__list-item"
-                        rel="noopener noreferrer"
-                        target="_blank"
                 >
                         <a
                                 href="https://twitter.com/meligatt"
+                                rel="noopener noreferrer"
+                                target="_blank"
                         >
-                                Twitter
+                                Author
                         </a>
                 </li>
         </ul>
@@ -99,34 +97,32 @@ ShallowWrapper {
             <li
                         className="footer__list-item"
             >
-                        <a
-                                    href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
+                        <Link
+                                    replace={false}
+                                    to="/"
                         >
-                                    LinkedIn
-                        </a>
+                                    Home
+                        </Link>
             </li>
             <li
                         className="footer__list-item"
-                        rel="noopener noreferrer"
-                        target="_blank"
             >
-                        <a
-                                    href="https://github.com/meligatt"
+                        <Link
+                                    replace={false}
+                                    to="/about"
                         >
-                                    Github
-                        </a>
+                                    About
+                        </Link>
             </li>
             <li
                         className="footer__list-item"
-                        rel="noopener noreferrer"
-                        target="_blank"
             >
                         <a
                                     href="https://twitter.com/meligatt"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
                         >
-                                    Twitter
+                                    Author
                         </a>
             </li>
 </ul>,
@@ -192,34 +188,32 @@ ShallowWrapper {
               <li
                 className="footer__list-item"
 >
-                <a
-                                href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                <Link
+                                replace={false}
+                                to="/"
                 >
-                                LinkedIn
-                </a>
+                                Home
+                </Link>
 </li>,
               <li
                 className="footer__list-item"
-                rel="noopener noreferrer"
-                target="_blank"
 >
-                <a
-                                href="https://github.com/meligatt"
+                <Link
+                                replace={false}
+                                to="/about"
                 >
-                                Github
-                </a>
+                                About
+                </Link>
 </li>,
               <li
                 className="footer__list-item"
-                rel="noopener noreferrer"
-                target="_blank"
 >
                 <a
                                 href="https://twitter.com/meligatt"
+                                rel="noopener noreferrer"
+                                target="_blank"
                 >
-                                Twitter
+                                Author
                 </a>
 </li>,
             ],
@@ -232,29 +226,27 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                "children": <Link
+                  replace={false}
+                  to="/"
 >
-                  LinkedIn
-</a>,
+                  Home
+</Link>,
                 "className": "footer__list-item",
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "children": "LinkedIn",
-                  "href": "https://www.linkedin.com/in/melissa-gattoni-54975b49/",
-                  "rel": "noopener noreferrer",
-                  "target": "_blank",
+                  "children": "Home",
+                  "replace": false,
+                  "to": "/",
                 },
                 "ref": null,
-                "rendered": "LinkedIn",
-                "type": "a",
+                "rendered": "Home",
+                "type": [Function],
               },
               "type": "li",
             },
@@ -263,27 +255,27 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  href="https://github.com/meligatt"
+                "children": <Link
+                  replace={false}
+                  to="/about"
 >
-                  Github
-</a>,
+                  About
+</Link>,
                 "className": "footer__list-item",
-                "rel": "noopener noreferrer",
-                "target": "_blank",
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "children": "Github",
-                  "href": "https://github.com/meligatt",
+                  "children": "About",
+                  "replace": false,
+                  "to": "/about",
                 },
                 "ref": null,
-                "rendered": "Github",
-                "type": "a",
+                "rendered": "About",
+                "type": [Function],
               },
               "type": "li",
             },
@@ -294,12 +286,12 @@ ShallowWrapper {
               "props": Object {
                 "children": <a
                   href="https://twitter.com/meligatt"
+                  rel="noopener noreferrer"
+                  target="_blank"
 >
-                  Twitter
+                  Author
 </a>,
                 "className": "footer__list-item",
-                "rel": "noopener noreferrer",
-                "target": "_blank",
               },
               "ref": null,
               "rendered": Object {
@@ -307,11 +299,13 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Twitter",
+                  "children": "Author",
                   "href": "https://twitter.com/meligatt",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
                 },
                 "ref": null,
-                "rendered": "Twitter",
+                "rendered": "Author",
                 "type": "a",
               },
               "type": "li",
@@ -352,34 +346,32 @@ ShallowWrapper {
                     <li
                               className="footer__list-item"
                     >
-                              <a
-                                        href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                                        rel="noopener noreferrer"
-                                        target="_blank"
+                              <Link
+                                        replace={false}
+                                        to="/"
                               >
-                                        LinkedIn
-                              </a>
+                                        Home
+                              </Link>
                     </li>
                     <li
                               className="footer__list-item"
-                              rel="noopener noreferrer"
-                              target="_blank"
                     >
-                              <a
-                                        href="https://github.com/meligatt"
+                              <Link
+                                        replace={false}
+                                        to="/about"
                               >
-                                        Github
-                              </a>
+                                        About
+                              </Link>
                     </li>
                     <li
                               className="footer__list-item"
-                              rel="noopener noreferrer"
-                              target="_blank"
                     >
                               <a
                                         href="https://twitter.com/meligatt"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
                               >
-                                        Twitter
+                                        Author
                               </a>
                     </li>
           </ul>
@@ -412,34 +404,32 @@ ShallowWrapper {
               <li
                             className="footer__list-item"
               >
-                            <a
-                                          href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                                          rel="noopener noreferrer"
-                                          target="_blank"
+                            <Link
+                                          replace={false}
+                                          to="/"
                             >
-                                          LinkedIn
-                            </a>
+                                          Home
+                            </Link>
               </li>
               <li
                             className="footer__list-item"
-                            rel="noopener noreferrer"
-                            target="_blank"
               >
-                            <a
-                                          href="https://github.com/meligatt"
+                            <Link
+                                          replace={false}
+                                          to="/about"
                             >
-                                          Github
-                            </a>
+                                          About
+                            </Link>
               </li>
               <li
                             className="footer__list-item"
-                            rel="noopener noreferrer"
-                            target="_blank"
               >
                             <a
                                           href="https://twitter.com/meligatt"
+                                          rel="noopener noreferrer"
+                                          target="_blank"
                             >
-                                          Twitter
+                                          Author
                             </a>
               </li>
 </ul>,
@@ -505,34 +495,32 @@ ShallowWrapper {
                 <li
                   className="footer__list-item"
 >
-                  <a
-                                    href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
+                  <Link
+                                    replace={false}
+                                    to="/"
                   >
-                                    LinkedIn
-                  </a>
+                                    Home
+                  </Link>
 </li>,
                 <li
                   className="footer__list-item"
-                  rel="noopener noreferrer"
-                  target="_blank"
 >
-                  <a
-                                    href="https://github.com/meligatt"
+                  <Link
+                                    replace={false}
+                                    to="/about"
                   >
-                                    Github
-                  </a>
+                                    About
+                  </Link>
 </li>,
                 <li
                   className="footer__list-item"
-                  rel="noopener noreferrer"
-                  target="_blank"
 >
                   <a
                                     href="https://twitter.com/meligatt"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
                   >
-                                    Twitter
+                                    Author
                   </a>
 </li>,
               ],
@@ -545,29 +533,27 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <a
-                    href="https://www.linkedin.com/in/melissa-gattoni-54975b49/"
-                    rel="noopener noreferrer"
-                    target="_blank"
+                  "children": <Link
+                    replace={false}
+                    to="/"
 >
-                    LinkedIn
-</a>,
+                    Home
+</Link>,
                   "className": "footer__list-item",
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
-                    "children": "LinkedIn",
-                    "href": "https://www.linkedin.com/in/melissa-gattoni-54975b49/",
-                    "rel": "noopener noreferrer",
-                    "target": "_blank",
+                    "children": "Home",
+                    "replace": false,
+                    "to": "/",
                   },
                   "ref": null,
-                  "rendered": "LinkedIn",
-                  "type": "a",
+                  "rendered": "Home",
+                  "type": [Function],
                 },
                 "type": "li",
               },
@@ -576,27 +562,27 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <a
-                    href="https://github.com/meligatt"
+                  "children": <Link
+                    replace={false}
+                    to="/about"
 >
-                    Github
-</a>,
+                    About
+</Link>,
                   "className": "footer__list-item",
-                  "rel": "noopener noreferrer",
-                  "target": "_blank",
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
-                    "children": "Github",
-                    "href": "https://github.com/meligatt",
+                    "children": "About",
+                    "replace": false,
+                    "to": "/about",
                   },
                   "ref": null,
-                  "rendered": "Github",
-                  "type": "a",
+                  "rendered": "About",
+                  "type": [Function],
                 },
                 "type": "li",
               },
@@ -607,12 +593,12 @@ ShallowWrapper {
                 "props": Object {
                   "children": <a
                     href="https://twitter.com/meligatt"
+                    rel="noopener noreferrer"
+                    target="_blank"
 >
-                    Twitter
+                    Author
 </a>,
                   "className": "footer__list-item",
-                  "rel": "noopener noreferrer",
-                  "target": "_blank",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -620,11 +606,13 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Twitter",
+                    "children": "Author",
                     "href": "https://twitter.com/meligatt",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
                   },
                   "ref": null,
-                  "rendered": "Twitter",
+                  "rendered": "Author",
                   "type": "a",
                 },
                 "type": "li",

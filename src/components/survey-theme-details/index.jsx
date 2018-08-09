@@ -1,7 +1,18 @@
 import './index.scss';
 import React from 'react';
 import { getAverageRatingPerQuestion } from './calculate-average-value';
+import { roundToNearestInteger } from '../../lib/helpers';
 
+const renderStars = (value) => {
+  if(isNaN(value) || value === 0 ){
+    return <span>No rating available</span>
+  }
+  let star = '★';
+  for(let i=1; i < value; i++ ){
+    star = star + '★';
+  }
+ return <span className="survey-theme-details__star" role="img" aria-label="rating"> {star} </span>
+}
 
 const SurveyThemeDetails = ({theme}) => {
   const averagePerQuestionArray = theme.questions.map((question) => {
@@ -29,9 +40,11 @@ const SurveyThemeDetails = ({theme}) => {
                   <li>Question type: {question.question_type}</li>
                   <li>Number of responses per question: {question.survey_responses.length}</li>
                   <li>Number of Valid responses per question: {averagePerQuestionItem.validResponsesCount}</li>
-                  <li>Response average (from valid responses): {averagePerQuestionItem.average}</li>
+                  <li>Response average (from valid responses):
+                      {renderStars(roundToNearestInteger(averagePerQuestionItem.average))}
+                      <small> ({ roundToNearestInteger(averagePerQuestionItem.average) })</small>
+                  </li>
                 </ul>
-
               </li>
             )}
           )

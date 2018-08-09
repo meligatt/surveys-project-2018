@@ -1,8 +1,10 @@
+@import 'src/styles/abstracts/functions/_get-color';
+
 .footer {
   .footer__container{
     height: 70px;
     bottom:0;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid getColor(silver);
     display: flex;
     justify-content: space-around;
   }
@@ -10,7 +12,7 @@
     display: flex;
     font-size: 0.8rem;
     align-items: center;
-    color: rgba(0,0,0,0.5);
+    color: getColor(black-60);
     flex: 0 1 auto;
   }
   .footer__link-list{

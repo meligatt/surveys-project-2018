@@ -1,6 +1,6 @@
+@import 'src/styles/abstracts/functions/_get-color';
 .survey_results {
   .survey-results__container {
-    background-color: #FFFFFF;
-    border: 1px solid red;
+    background-color: getColor(white);
   }
 }

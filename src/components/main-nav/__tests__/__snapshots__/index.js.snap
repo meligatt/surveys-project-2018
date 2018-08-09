@@ -49,16 +49,6 @@ ShallowWrapper {
                                 About
                         </Link>
                 </li>
-                <li
-                        className="main-nav__item"
-                >
-                        <Link
-                                replace={false}
-                                to="/about"
-                        >
-                                Help
-                        </Link>
-                </li>
         </ul>
 </div>,
       "className": "main-nav",
@@ -97,16 +87,6 @@ ShallowWrapper {
                                     to="/about"
                         >
                                     About
-                        </Link>
-            </li>
-            <li
-                        className="main-nav__item"
-            >
-                        <Link
-                                    replace={false}
-                                    to="/about"
-                        >
-                                    Help
                         </Link>
             </li>
 </ul>,
@@ -152,16 +132,6 @@ ShallowWrapper {
                                 to="/about"
                 >
                                 About
-                </Link>
-</li>,
-              <li
-                className="main-nav__item"
->
-                <Link
-                                replace={false}
-                                to="/about"
-                >
-                                Help
                 </Link>
 </li>,
             ],
@@ -227,35 +197,6 @@ ShallowWrapper {
               },
               "type": "li",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <Link
-                  replace={false}
-                  to="/about"
->
-                  Help
-</Link>,
-                "className": "main-nav__item",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Help",
-                  "replace": false,
-                  "to": "/about",
-                },
-                "ref": null,
-                "rendered": "Help",
-                "type": [Function],
-              },
-              "type": "li",
-            },
           ],
           "type": "ul",
         },
@@ -302,16 +243,6 @@ ShallowWrapper {
                                         About
                               </Link>
                     </li>
-                    <li
-                              className="main-nav__item"
-                    >
-                              <Link
-                                        replace={false}
-                                        to="/about"
-                              >
-                                        Help
-                              </Link>
-                    </li>
           </ul>
 </div>,
         "className": "main-nav",
@@ -350,16 +281,6 @@ ShallowWrapper {
                                           to="/about"
                             >
                                           About
-                            </Link>
-              </li>
-              <li
-                            className="main-nav__item"
-              >
-                            <Link
-                                          replace={false}
-                                          to="/about"
-                            >
-                                          Help
                             </Link>
               </li>
 </ul>,
@@ -405,16 +326,6 @@ ShallowWrapper {
                                     to="/about"
                   >
                                     About
-                  </Link>
-</li>,
-                <li
-                  className="main-nav__item"
->
-                  <Link
-                                    replace={false}
-                                    to="/about"
-                  >
-                                    Help
                   </Link>
 </li>,
               ],
@@ -476,35 +387,6 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "About",
-                  "type": [Function],
-                },
-                "type": "li",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <Link
-                    replace={false}
-                    to="/about"
->
-                    Help
-</Link>,
-                  "className": "main-nav__item",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Help",
-                    "replace": false,
-                    "to": "/about",
-                  },
-                  "ref": null,
-                  "rendered": "Help",
                   "type": [Function],
                 },
                 "type": "li",

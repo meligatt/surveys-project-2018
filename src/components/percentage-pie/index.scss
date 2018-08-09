@@ -1,6 +1,8 @@
+@import 'src/styles/abstracts/functions/_get-color';
+
 .percentage-pie{
   .percentage-pie__container {
-    background-color: #fef5f5;
+    background-color: getColor(wispPink);
     padding: 2rem;
   }
   .percentage-pie__percentage{

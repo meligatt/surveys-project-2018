@@ -1,18 +1,20 @@
+@import 'src/styles/abstracts/functions/_get-color';
+
 .main-nav {
   .main-nav__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 90px;
-    background: white;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    background: getColor(white);
+    box-shadow: 0 2px 3px 0 getColor(blackShadow);
     padding: 0 20px;
   }
   .main-nav__logo {
     display: inline-block;
-    border: 2px solid #f14b5d;
+    border: 2px solid getColor(carnation);
     font-size: 1.5rem;
-    color: #f14b5d;
+    color: getColor(carnation);
     text-decoration: none;
     padding: 0.5rem;
   }
@@ -30,12 +32,12 @@
     margin-right: 10px;
     font-size: 1rem;
     a {
-      color: #3e4543;
+      color: getColor(capeCod);
       text-transform: none;
       letter-spacing: normal;
       transition: color .2s ease-in;
       &:hover {
-        color: #f14b5d;
+        color: getColor(carnation);
       }
     }
   }

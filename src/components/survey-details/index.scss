@@ -1,7 +1,9 @@
+@import 'src/styles/abstracts/functions/_get-color';
+
 .survey-details {
   .survey-details__title {
     font-size: 1.5rem;
-    color: #f14b5d;
+    color: getColor(carnation);
     margin: 0 0 8px;
     font-weight: 400;
   }
