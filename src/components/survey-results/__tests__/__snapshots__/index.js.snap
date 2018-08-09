@@ -37,9 +37,6 @@ ShallowWrapper {
         <PercentagePie
                 value={undefined}
         />
-        <AverageRatingPerQuestion
-                themes={undefined}
-        />
 </div>,
       "className": "survey-results",
     },
@@ -58,9 +55,6 @@ ShallowWrapper {
 />,
           <PercentagePie
             value={undefined}
-/>,
-          <AverageRatingPerQuestion
-            themes={undefined}
 />,
           null,
         ],
@@ -93,17 +87,6 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "themes": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
         null,
       ],
       "type": "div",
@@ -128,9 +111,6 @@ ShallowWrapper {
           <PercentagePie
                     value={undefined}
           />
-          <AverageRatingPerQuestion
-                    themes={undefined}
-          />
 </div>,
         "className": "survey-results",
       },
@@ -149,9 +129,6 @@ ShallowWrapper {
 />,
             <PercentagePie
               value={undefined}
-/>,
-            <AverageRatingPerQuestion
-              themes={undefined}
 />,
             null,
           ],
@@ -179,17 +156,6 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "themes": undefined,
             },
             "ref": null,
             "rendered": null,

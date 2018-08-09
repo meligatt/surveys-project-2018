@@ -15,8 +15,9 @@ class SurveyResults extends Component{
   componentDidMount(){
     // TODO:  get the url from this.state.results.url not params
     const { match } = this.props;
+    const endpoint = '/api/survey_results/' + match.params.id;
     makeRequest({
-      endpoint: `/api/survey_results/${match.params.id}`,
+      endpoint: endpoint,
       method: "GET",
     }).then((data) => {
       this.setState({results: data.survey_result_detail});
