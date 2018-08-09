@@ -7,11 +7,23 @@
   .survey-theme-details__name {
     text-transform: uppercase;
   }
-  .survey-theme-details__question-list {
+  .survey-theme-details__question-description{
+    font-weight: bold;
+  }
+
+  .survey-theme-details__questions {
     margin-left: 0;
     margin-right: 0;
+    li {
+      margin: 1rem 0;
+    }
   }
-  .survey-theme-details__question-list-item {
-    margin: 1rem 0;
+
+  .survey-theme-details__stats {
+    margin-left: 0;
+    margin-right: 0;
+    li {
+      margin: 1rem 0;
+    }
   }
 }

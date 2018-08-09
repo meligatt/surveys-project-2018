@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { makeRequest } from '../../lib/requests/make-request';
 import SurveyDetails from '../survey-details';
 import PercentagePie from '../percentage-pie';
-import AverageRatingPerQuestion from '../average-rating-per-question';
 import SurveyThemeDetails from '../survey-theme-details';
 
 
@@ -30,7 +29,9 @@ class SurveyResults extends Component{
     }
     return(
       <div className="survey-results__themes">
-        { themes.map((theme, i) => <SurveyThemeDetails theme = { theme } key = {i} />) }
+        { themes.map((theme, i) =>
+          <SurveyThemeDetails theme = { theme } key = {i} />
+        ) }
       </div>
     )
   }
@@ -47,7 +48,6 @@ class SurveyResults extends Component{
             submittedResponseCount = { submitted_response_count }
           />
           <PercentagePie value = { response_rate }/>
-          <AverageRatingPerQuestion themes = { themes }/>
 
           { this.renderSurveyThemes(themes) }
 
