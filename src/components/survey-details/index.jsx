@@ -13,7 +13,7 @@ const SurveyDetails = ({
       { name && <h3 className="survey-details__title">{ name }</h3> }
       <ul className="survey-details__list">
         <li className="survey-details__item">Participant count: { participantCount }</li>
-        <li className="survey-details__item">Response rate: { setValueAsPercentage(responseRate) }%</li>
+        <li className="survey-details__item">Response rate: { responseRate && setValueAsPercentage(responseRate) }%</li>
         <li className="survey-details__item">Submitted response count: { submittedResponseCount }</li>
       </ul>
     </div>

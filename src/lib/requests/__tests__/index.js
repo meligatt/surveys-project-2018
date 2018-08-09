@@ -7,8 +7,6 @@ const host = 'http://localhost:3000';
 axios.defaults.host = host;
 axios.defaults.adapter = httpAdapter;
 
-
-
 describe('makeRequest', () => {
   describe('When an invalid method is provided as arguments to the request', () => {
     it('throws an error', () => {
@@ -39,6 +37,7 @@ describe('makeRequest', () => {
     })
   });
 
+
   describe('When a valid method is provided as arguments to the request', () => {
     it('sends a HTTP request with method set as GET', () => {
       expect.assertions(1);
@@ -61,4 +60,4 @@ describe('makeRequest', () => {
     })
   })
 
-})
+});

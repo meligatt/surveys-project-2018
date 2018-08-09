@@ -23,6 +23,6 @@ export const makeRequest = ({ endpoint, method, params }) => {
    return JSON.parse(data);
  })
  .catch((error) => {
-   throw(error);
+   return error;
  });
 }
