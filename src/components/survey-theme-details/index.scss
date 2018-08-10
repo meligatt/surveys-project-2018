@@ -31,4 +31,8 @@
   .survey-theme-details__star{
     color: getColor(orange);
   }
+  .survey-theme-details__scale {
+    background-color: getColor(clearDay);
+    padding: 0.5rem;
+  }
 }

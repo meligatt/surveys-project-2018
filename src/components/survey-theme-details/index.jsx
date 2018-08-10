@@ -23,6 +23,16 @@ const SurveyThemeDetails = ({theme}) => {
     <div className="survey-theme-details">
       <div className="survey-theme-details__container">
         <h4>Survey Theme: <span className="survey-theme-details__name">{ theme.name }</span></h4>
+
+        <div className="survey-theme-details__scale">
+          Survey scale:
+          <ul>
+            <li>1 star: strongly disagree</li>
+            <li>5 stars: strongly agree</li>
+          </ul>
+        </div>
+
+
         <h5>Questions:</h5>
         <ul className="survey-theme-details__questions">
           { theme.questions.map((question, index, array) => {
