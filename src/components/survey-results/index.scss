@@ -1,6 +1,10 @@
 @import 'src/styles/abstracts/functions/_get-color';
 .survey_results {
   .survey-results__container {
+    border: 1px solid red;
     background-color: getColor(white);
+  }
+  .survey-results__scale {
+    background-color: getColor(lemon);
   }
 }

@@ -50,6 +50,14 @@ class SurveyResults extends Component{
           />
           <PercentagePie value = { response_rate }/>
 
+          <div className="survey-results__scale">
+            Survey scale:
+            <ul>
+              <li>1 star: strongly disagree</li>
+              <li>5 stars: strongly agree</li>
+            </ul>
+          </div>
+
           { this.renderSurveyThemes(themes) }
 
         </div>
