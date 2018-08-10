@@ -28,7 +28,7 @@ class SurveyList extends Component {
       );
     }
     return surveys.map((item, i) => {
-      const url = item.url.split(".json")[0]; //url:  `/survey_results/1`
+      const url = item.url.split(".json")[0];
       return (
         <div className="survey-list__card" key = {i}>
           <header>
