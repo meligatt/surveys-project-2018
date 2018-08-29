@@ -1,4 +1,5 @@
 import './index.scss';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { makeRequest } from '../../lib/requests/make-request';
 import SurveyDetails from '../survey-details';
@@ -9,7 +10,7 @@ import SurveyThemeDetails from '../survey-theme-details';
 class SurveyResults extends Component{
   constructor(){
     super();
-    this.state = {results:{}}
+    this.state = {results:{}};
   }
 
   componentDidMount(){
@@ -18,7 +19,7 @@ class SurveyResults extends Component{
     const endpoint = '/api/survey_results/' + match.params.id;
     makeRequest({
       endpoint: endpoint,
-      method: "GET",
+      method: 'GET',
     }).then((data) => {
       this.setState({results: data.survey_result_detail});
     });
@@ -34,7 +35,7 @@ class SurveyResults extends Component{
           <SurveyThemeDetails theme = { theme } key = {i} />
         ) }
       </div>
-    )
+    );
   }
 
   render(){
@@ -54,8 +55,12 @@ class SurveyResults extends Component{
 
         </div>
       </div>
-    )
+    );
   }
 }
+
+SurveyResults.propTypes = {
+  match: PropTypes.object,
+};
 
 export default SurveyResults;

@@ -1,18 +1,19 @@
 import './index.scss';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { getAverageRatingPerQuestion } from './calculate-average-value';
 import { roundToNearestInteger } from '../../lib/helpers';
 
 const renderStars = (value) => {
   if(isNaN(value) || value === 0 ){
-    return <span>No rating available</span>
+    return (<span>No rating available</span>);
   }
   let star = '★';
   for(let i=1; i < value; i++ ){
     star = star + '★';
   }
- return <span className="survey-theme-details__star" role="img" aria-label="rating"> {star} </span>
-}
+  return <span className="survey-theme-details__star" role="img" aria-label="rating"> {star} </span>;
+};
 
 const SurveyThemeDetails = ({theme}) => {
   const averagePerQuestionArray = theme.questions.map((question) => {
@@ -32,11 +33,9 @@ const SurveyThemeDetails = ({theme}) => {
           </ul>
         </div>
 
-
         <h5>Questions:</h5>
         <ul className="survey-theme-details__questions">
-          { theme.questions.map((question, index, array) => {
-
+          { theme.questions.map((question, index) => {
             const averagePerQuestionItem = averagePerQuestionArray.find((item)=>{
               return item.questionDescription === question.description;
             });
@@ -51,16 +50,21 @@ const SurveyThemeDetails = ({theme}) => {
                   <li>Number of responses per question: {question.survey_responses.length}</li>
                   <li>Number of Valid responses per question: {averagePerQuestionItem.validResponsesCount}</li>
                   <li>Response average (from valid responses):
-                      {renderStars(roundToNearestInteger(averagePerQuestionItem.average))}
-                      <small> ({ roundToNearestInteger(averagePerQuestionItem.average) })</small>
+                    {renderStars(roundToNearestInteger(averagePerQuestionItem.average))}
+                    <small> ({ roundToNearestInteger(averagePerQuestionItem.average) })</small>
                   </li>
                 </ul>
               </li>
-            )}
-          )
-        }
-      </ul>
+            );}
+          ) }
+        </ul>
+      </div>
     </div>
-  </div>
-)}
+  );
+};
+
+SurveyThemeDetails.propTypes = {
+  theme: PropTypes.object,
+};
+
 export default SurveyThemeDetails;

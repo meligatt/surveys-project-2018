@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SurveyResults from '../components/survey-results';
 
 const SurveyResultsView = ({match}) => {
@@ -9,5 +10,10 @@ const SurveyResultsView = ({match}) => {
       </div>
     </div>
   );
-}
+};
+
+SurveyResultsView.propTypes = {
+  match: PropTypes.object,
+};
+
 export default SurveyResultsView;

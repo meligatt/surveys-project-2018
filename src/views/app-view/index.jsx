@@ -23,5 +23,5 @@ const AppView = () => {
       <Footer/>
     </div>
   );
-}
+};
 export default AppView;

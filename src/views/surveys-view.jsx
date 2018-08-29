@@ -13,5 +13,5 @@ const SurveysView = () => {
       </div>
     </div>
   );
-}
+};
 export default SurveysView;

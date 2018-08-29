@@ -11,18 +11,18 @@ const setRequestMethod = (method) => {
 
 export const makeRequest = ({ endpoint, method, params }) => {
   // TODO: add this hardcoded value in a config file with URL's
-  const APP_URL = "http://localhost:3000";
+  const APP_URL = 'http://localhost:3000';
 
- return axios({
-   url: APP_URL + endpoint,
-   method: setRequestMethod(method),
-   params,
-   transformResponse: [(data) => data],
- })
- .then(({data}) => {
-   return JSON.parse(data);
- })
- .catch((error) => {
-   return error;
- });
-}
+  return axios({
+    url: APP_URL + endpoint,
+    method: setRequestMethod(method),
+    params,
+    transformResponse: [(data) => data],
+  })
+    .then(({data}) => {
+      return JSON.parse(data);
+    })
+    .catch((error) => {
+      return error;
+    });
+};

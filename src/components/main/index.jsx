@@ -1,4 +1,5 @@
 import './index.scss';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Main = ({children}) => {
@@ -11,5 +12,10 @@ const Main = ({children}) => {
       </div>
     </main>
   );
-}
+};
+
+Main.propTypes = {
+  children: PropTypes.any.isRequired,
+};
+
 export default Main;

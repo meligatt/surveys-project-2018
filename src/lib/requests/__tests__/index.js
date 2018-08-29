@@ -12,29 +12,29 @@ describe('makeRequest', () => {
     it('throws an error', () => {
       expect.assertions(5);
 
-      const endpoint = "/fake/endpoint";
+      const endpoint = '/fake/endpoint';
 
       expect(() => {
         makeRequest({endpoint: endpoint, method:'POST'});
-      }).toThrow("Unexpected Request method");
+      }).toThrow('Unexpected Request method');
 
       expect(() => {
         makeRequest({endpoint: endpoint, method:'PUT'});
-      }).toThrow("Unexpected Request method");
+      }).toThrow('Unexpected Request method');
 
       expect(() => {
         makeRequest({endpoint: endpoint, method:'DELETE'});
-      }).toThrow("Unexpected Request method");
+      }).toThrow('Unexpected Request method');
 
       expect(() => {
         makeRequest({endpoint: endpoint, method:'PATCH'});
-      }).toThrow("Unexpected Request method");
+      }).toThrow('Unexpected Request method');
 
       expect(() => {
         makeRequest({endpoint: endpoint});
-      }).toThrow("Unexpected Request method");
+      }).toThrow('Unexpected Request method');
 
-    })
+    });
   });
 
 
@@ -43,11 +43,11 @@ describe('makeRequest', () => {
       expect.assertions(1);
 
       // const APP_URL = "http://localhost:3000";
-      const endpoint = "/fake/endpoint";
+      const endpoint = '/fake/endpoint';
       // set up
       const scope = nock(host)
         .get(endpoint)
-        .reply(200, '{"lorem":"ipsum"}')
+        .reply(200, '{"lorem":"ipsum"}');
 
       // execution
       return makeRequest({
@@ -56,8 +56,8 @@ describe('makeRequest', () => {
       }).then(() => {
         // expectation
         expect(scope.isDone()).toBe(true);
-      })
-    })
-  })
+      });
+    });
+  });
 
 });

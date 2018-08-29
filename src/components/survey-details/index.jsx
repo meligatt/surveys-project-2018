@@ -1,4 +1,5 @@
 import './index.scss';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { setValueAsPercentage } from '../../lib/helpers';
 
@@ -18,5 +19,13 @@ const SurveyDetails = ({
       </ul>
     </div>
   );
-}
+};
+
+SurveyDetails.propTypes = {
+  name: PropTypes.string,
+  participantCount: PropTypes.number,
+  responseRate: PropTypes.number,
+  submittedResponseCount: PropTypes.number
+};
+
 export default SurveyDetails;
