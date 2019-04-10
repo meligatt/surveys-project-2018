@@ -50,7 +50,6 @@ const SurveyThemeDetails = ({theme}) => {
               }
               return accObject;
             }, {});
-            console.log('instancesPerValueObject', instancesPerValueObject);
             const xValues = Object.keys(instancesPerValueObject);
 
             return (
