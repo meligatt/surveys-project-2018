@@ -1,4 +1,3 @@
-# DOCUMENTATION FOR: Culture Amp’s Front End Developer Coding Test
 - author: Melissa Gattoni (meligatt@gmail.com)
 
 ## To build the project on dev environment:
