@@ -40,6 +40,19 @@ const SurveyThemeDetails = ({theme}) => {
               return item.questionDescription === question.description;
             });
 
+            const valid_survey_responses =  question.survey_responses.filter((item) => item.response_content !== '');
+            const instancesPerValueObject = valid_survey_responses.reduce((accObject, currentItem)=>{
+              const key = currentItem.response_content;
+              if(key in accObject){
+                accObject[key] = accObject[key] + 1;
+              } else {
+                accObject[key] = 1;
+              }
+              return accObject;
+            }, {});
+            console.log('instancesPerValueObject', instancesPerValueObject);
+            const xValues = Object.keys(instancesPerValueObject);
+
             return (
               <li key = {index}>
                 <div className="survey-theme-details__question-description">
@@ -52,6 +65,11 @@ const SurveyThemeDetails = ({theme}) => {
                   <li>Response average (from valid responses):
                     {renderStars(roundToNearestInteger(averagePerQuestionItem.average))}
                     <small> ({ roundToNearestInteger(averagePerQuestionItem.average) })</small>
+                  </li>
+                  <li> {
+                    xValues.map(item =>  <p key={item}>
+                      {instancesPerValueObject[item]} people responded with { item } stars</p> )
+                  }
                   </li>
                 </ul>
               </li>
